@@ -1,0 +1,13 @@
+{
+  "name": "Email-Service",
+  "version": "0.0.1",
+  "description": "Integrated Single Point of Contact for Email Service Providers",
+  "main": "index.js",
+  "dependencies": {
+    "mocha": "^2.4.5",
+    "restler": "^3.4.0"
+  },
+  "repository": {},
+  "author": "oyewiki",
+  "license": "Proprietary"
+}
