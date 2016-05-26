@@ -1,7 +1,7 @@
 "use strict";
 
 module.exports = {
-	url : "https://api.sendinblue.com/v2.0",
-	access_key : "vqsWjnzSEwQK396V",
-	timeout : 5000
+	url : "" //API URL  Provided by SendInBlue,
+	access_key : "" //Access Key Provided by SendInBlue,
+	timeout : 5000 //Set timeout for API calls
 };
