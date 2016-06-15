@@ -8,8 +8,8 @@ describe("#Ses Email Service", function(){
 		this.timeout(0);
 		//Sample data 
 		var data = {
-			to : ["hi@oyegennie.com","hi@oyewiki.com"],
-			from : "newsletter@oyewiki.com",
+			to : ["to1emailid@abc.com","to2emailid@abc.com"],
+			from : "fromemailid@abc.com",
 			subject : "AWS SES Service Demo",
 			text : "Hi we are testing aws ses email service"
 		};

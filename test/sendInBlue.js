@@ -8,8 +8,8 @@ describe("#SendInBlue Email Service", function(){
 		this.timeout(0);
 		//Sample data 
 		var data = {
-			to : {"ankurrastogirocking@gmail.com" : "Ankur Rastogi"},
-			from : ["ankurrastogi09@gmail.com", "Ankur Rastogi"],
+			to : {"toemailid@abc.com" : "to person name"},
+			from : ["fromemailid@abc.com", "from person name"],
 			subject : "Test Subject",
 			html : "Hi we are testing sendInBlue email service"
 		};
