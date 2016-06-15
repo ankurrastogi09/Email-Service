@@ -4,6 +4,7 @@
   "description": "Integrated Single Point of Contact for Email Service Providers",
   "main": "index.js",
   "dependencies": {
+    "aws-sdk": "^2.3.19",
     "mocha": "^2.4.5",
     "restler": "^3.4.0"
   },
