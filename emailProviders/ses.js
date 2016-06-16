@@ -24,7 +24,7 @@ var sesProvider = {
 		});
 
 		//Check if both text and html is not present
-		if(!email_data.text && !email_data.html){
+		if(!data.text && !data.html){
 			invalidFlag = true;
 		}
 
