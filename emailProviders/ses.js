@@ -19,9 +19,14 @@ var sesProvider = {
 		var email_data = {};
 
 		//Check if mandatory fields are present
-		['from','to','subject', 'text'].forEach(function(key){
+		['from','to','subject'].forEach(function(key){
 			if(!data[key]) invalidFlag = true;
 		});
+
+		//Check if both text and html is not present
+		if(!email_data.text && !email_data.html){
+			invalidFlag = true;
+		}
 
 		//Throw error if mandatory details are not present
 		if(invalidFlag) cb(new Error("Not sent mandatory details!!!"));
@@ -34,11 +39,25 @@ var sesProvider = {
 		//Add Source if email_data.from is present
 		if(email_data.from) options.Source = email_data.from;
 		
-		//Add Destination if email_data.to is present
+		//Add Destination.ToAddresses if email_data.to is present
 		if(email_data.to) {
 			if(!options.Destination) options.Destination = {};
 			if(!util.isArray(email_data.to)) email_data.to = [email_data.to];
 			options.Destination.ToAddresses = email_data.to;
+		}
+
+		//Add Destination.CcAddresses if email_aata.cc is present
+		if(email_data.cc) {
+			if(!options.Destination) options.Destination = {};
+			if(!util.isArray(email_data.cc)) email_data.cc = [email_data.cc];
+			options.Destination.CcAddresses = email_data.cc;
+		}
+
+		//Add Destination.BccAddresses if email_data.bcc is present
+		if(email_data.bcc) {
+			if(!options.Destination) options.Destination = {};
+			if(!util.isArray(email_data.bcc)) email_data.bcc = [email_data.bcc];
+			options.Destination.BccAddresses = email_data.bcc;
 		}
 
 		//Add Message Subject if email_data.subject is present
@@ -54,6 +73,14 @@ var sesProvider = {
 			if(!options.Message.Body) options.Message.Body = {};
 			if(!options.Message.Body.Text) options.Message.Body.Text = {};
 			options.Message.Body.Text.Data = email_data.text;
+		}
+
+		//Add Message Html if email_data.html id presnt
+		if(email_data.html){
+			if(!options.Message) options.Message = {};
+			if(!options.Message.Body) options.Message.Body = {};
+			if(!options.Message.Body.Html) options.Message.Body.Html = {};
+			options.Message.Body.Html.Data = email_data.html;
 		}
 
 		//Call ses.sendEmail with email options
