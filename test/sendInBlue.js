@@ -15,10 +15,6 @@ describe("#SendInBlue Email Service", function(){
 		};
 		
 		sendInBlueService.sendEmail(data, function(data){
-			// if(err){
-			// 	util.log(err);
-			// 	return done(err);
-			// }
 			console.log(data);
 			done();
 		});
