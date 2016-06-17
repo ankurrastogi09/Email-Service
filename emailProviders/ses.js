@@ -84,11 +84,7 @@ var sesProvider = {
 		}
 
 		//Call ses.sendEmail with email options
-		ses.sendEmail(options, function(err, data) {
-		    if(err) throw err
-	        console.log('Email sent:');
-	        console.log(data);
-		});
+		ses.sendEmail(options, cb);
 	}
 };
 
