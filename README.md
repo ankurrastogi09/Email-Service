@@ -2,15 +2,14 @@
 
 # Overview
 Single Point of contact for following email services
-- [AWS SES] (#awsses)
-- [Send In Blue] (#sendinblue)
+- [AWS SES] (**AWS SES**)
+- [Send In Blue] (**Send In Blue**)
 - [Mail Jet]
 - [Send Grid]
 
 Note: We use "rc" node module to define service specific configs.
 
 #How To Use
-## awsses
 
 1. **AWS SES**
 	Integration Steps:
@@ -43,7 +42,6 @@ Note: We use "rc" node module to define service specific configs.
 
 	For More details see mocha test cases @ ./test/ses.js file.
 
-## sendinblue
 2. **Send In Blue**
 	Integration Steps:
 
