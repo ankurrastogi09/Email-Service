@@ -70,10 +70,10 @@ Note: We use "rc" node module to define service specific configs.
 				done();
 			});
 
-3. ** Mail Jet **
+3. **Mail Jet**
 	//TO DO
 
-4. ** Send Grid **
+4. **Send Grid**
 	//TO DO
 
 	For More details see mocha test cases @ ./test/sendInBlue.js file.
