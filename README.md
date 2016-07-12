@@ -12,7 +12,8 @@ Note: We use "rc" node module to define service specific configs.
 #How To Use
 
 1. AWS SES
-	Steps:
+	Integration Steps:
+
 		1) Create ~/.config/awsses and save below mentioned object in this file for your details.
 			{
 			  "accessKeyId": "",//You AWS Access Key ID,
@@ -40,7 +41,7 @@ Note: We use "rc" node module to define service specific configs.
 			});
 
 	For More details see mocha test cases @ ./test/ses.js file.
-	
+
 2. SendInBlue
 
 #Benefit
