@@ -4,10 +4,10 @@
 
 # Overview
 Single Point of contact for following email services
-- [AWS SES] (# How To Use)
-- [Send In Blue] (# How To Use)
-- [Mail Jet] (# How To Use)
-- [Send Grid] (# How To Use)
+- [AWS SES] (# how)
+- [Send In Blue] (# how)
+- [Mail Jet] (# how)
+- [Send Grid] (# how)
 
 Note: We use "rc" node module to define service specific configs.
 
