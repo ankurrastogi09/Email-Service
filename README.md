@@ -42,7 +42,7 @@ Note: We use "rc" node module to define service specific configs.
 				done();
 			});
 
-	For More details see mocha test cases @ ./test/ses.js file.
+	For More details see mocha test cases **@ ./test/ses.js file.**
 
 2. ###Send In Blue
 	Integration Steps:
@@ -76,13 +76,13 @@ Note: We use "rc" node module to define service specific configs.
 4. ##Send Grid
 	//TO DO
 
-	For More details see mocha test cases @ ./test/sendInBlue.js file.
+	For More details see mocha test cases **@ ./test/sendInBlue.js file.**
 
 #Benefit
 This can act as a single point of contact for all your emails.
 
 
 #TODO
-Integration of 
-1. Mailjet
-2. SendGrid
+	Integration of 
+		1. Mailjet
+		2. SendGrid
