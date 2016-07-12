@@ -1,20 +1,19 @@
-> :pray: This is an official Oyewiki Email-Service to make your life easier when working with different email providers.
-
 # Email-Service
+
+> :pray: This is an official Oyewiki Email-Service to make your life easier when working with different email providers.
 
 # Overview
 Single Point of contact for following email services
-- [AWS SES] (# **AWS SES**)
-- [Send In Blue] (# **Send In Blue**)
-- [Mail Jet]
-- [Send Grid]
+- [AWS SES] (# How To Use)
+- [Send In Blue] (# How To Use)
+- [Mail Jet] (# How To Use)
+- [Send Grid] (# How To Use)
 
 Note: We use "rc" node module to define service specific configs.
 
-#How To Use
+## How To Use
 
-1. ## **AWS SES**
-
+1. **AWS SES**
 	Integration Steps:
 
 		1) Create ~/.config/awsses and save below mentioned object in this file for your details.
@@ -45,8 +44,7 @@ Note: We use "rc" node module to define service specific configs.
 
 	For More details see mocha test cases @ ./test/ses.js file.
 
-2. ## **Send In Blue**
-
+2. **Send In Blue**
 	Integration Steps:
 
 		1) Create ~/.config/sendinblue and save below mentioned object in this file for your details.
@@ -71,6 +69,12 @@ Note: We use "rc" node module to define service specific configs.
 				console.log(data);
 				done();
 			});
+
+3. ** Mail Jet **
+	//TO DO
+
+4. ** Send Grid **
+	//TO DO
 
 	For More details see mocha test cases @ ./test/sendInBlue.js file.
 
