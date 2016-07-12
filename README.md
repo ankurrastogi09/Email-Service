@@ -83,6 +83,6 @@ This can act as a single point of contact for all your emails.
 
 
 #TODO
-	Integration of 
-		1. Mailjet
-		2. SendGrid
+Integration of 
+	1. Mailjet
+	2. SendGrid
